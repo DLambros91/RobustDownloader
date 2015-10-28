@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/linearlayout"
+              android:orientation="vertical"
+              android:gravity="center" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:lines="1"
+        android:scrollHorizontally="true"
+        android:text="@string/default_link"
+        android:id="@+id/editText" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Download only with any wifi"
+                android:id="@+id/wifiBox"
+                android:layout_gravity="center_horizontal"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Download only with RU wifi"
+                android:id="@+id/RUBox"
+                android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="right">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Download"
+            android:text="Download"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Log"
+            android:text="Logs"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:weightSum="1"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:id="@+id/Progress"/>
+        <requestFocus android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</LinearLayout>
+<!-- From: file:/home/dlambros/AndroidStudioProjects/RobustDownloader/app/src/main/res/layout/activity_robust_download.xml -->

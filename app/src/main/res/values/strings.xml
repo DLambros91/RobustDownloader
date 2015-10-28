@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RobustDownloader</string>
+    <string name="wrong_network">Not connected to valid network!</string>
+    <string name="successful_download">Successfully downloaded</string>
+    <string name="failed_download">Failed Download</string>
+    <string name="default_link">http://www.winlab.rutgers.edu/~janne/mobisys14gesturesecurity.pdf</string>
+    <string name="loading">Loading</string>
+    <string name="action_settings">Settings</string>
+</resources>
